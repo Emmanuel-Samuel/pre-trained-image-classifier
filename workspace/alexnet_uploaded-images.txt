@@ -1,0 +1,82 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                 Dog_01.jpg.jpg  label:                        dog
+ 2 key:                     Fan_01.jpg  label:                        fan
+ 3 key:                    Frog_01.jpg  label:                       frog
+ 4 key:                 Dog_02.jpg.jpg  label:                        dog
+
+Filename= Dog_01.jpg.jpg 
+pet_image Label= dog 
+Classifier Label= bull mastiff 
+match= 0
+
+Filename= Fan_01.jpg 
+pet_image Label= fan 
+Classifier Label= fire screen, fireguard 
+match= 0
+
+Filename= Frog_01.jpg 
+pet_image Label= frog 
+Classifier Label= bullfrog, rana catesbeiana 
+match= 1
+
+Filename= Dog_02.jpg.jpg 
+pet_image Label= dog 
+Classifier Label= bloodhound, sleuthhound 
+match= 0
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:     bullfrog, rana catesbeiana
+
+ NOT A MATCH:
+
+                Dog_01.jpg.jpg: 
+Real:                        dog   Classifier:                   bull mastiff
+
+                    Fan_01.jpg: 
+Real:                        fan   Classifier:         fire screen, fireguard
+
+                Dog_02.jpg.jpg: 
+Real:                        dog   Classifier:        bloodhound, sleuthhound
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:     bullfrog, rana catesbeiana  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                Dog_01.jpg.jpg: 
+Real:                        dog   Classifier:                   bull mastiff  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Fan_01.jpg: 
+Real:                        fan   Classifier:         fire screen, fireguard  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                Dog_02.jpg.jpg: 
+Real:                        dog   Classifier:        bloodhound, sleuthhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+100.0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+** Total Elapsed Runtime: 0:1:15
