@@ -46,7 +46,7 @@ The registration system tags the images based upon the biographical information.
 		`check_images.py`
     >The program should successfully classify the 40 images from the pet_images folder
 - Open a terminal from the uploaded_images folder, and run
-		`sh run_models_batch_uploaded.sh
+		`sh run_models_batch_uploaded.sh`
     >This will run check_images.py using all three model achitectures to classify the four images in the uploaded_images folder outputting their results files into the workspace using .txt format 
 classify the 40 images from the pet_images folder. In this section, you will upload 4 images to the uploaded_images folder
 - Directions for Finding Images and Uploading Images
